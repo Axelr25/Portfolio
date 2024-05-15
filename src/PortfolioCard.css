@@ -1,0 +1,85 @@
+.portfolio-card {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background color */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 120px 20px;
+    border-radius: var(--radius-20);
+    font-family: var(--ff-barlow);
+    color: var(--white);
+    font-weight: var(--fw-600);
+    transition: var(--transition-2);
+    position: relative; /* Add position relative */
+  }
+  
+  .images-container {
+    position: relative; /* Add position relative */
+  }
+  
+  .images-container img {
+    max-width: 100%; /* Make sure image doesn't overflow */
+    max-height: 100%; /* Make sure image doesn't overflow */
+    display: block; /* Ensure image displays as block */
+  }
+  
+  .images-container img.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--radius-20); /* Add border-radius to match container */
+    z-index: 1;
+  }
+  
+  .card-content {
+    position: relative; /* Add position relative */
+  }
+  
+  .card-content .btn-link {
+    position: absolute;
+    bottom: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.7); /* Adjust opacity as needed */
+    padding: 10px 20px;
+    border-radius: var(--radius-10);
+    text-transform: uppercase;
+    font-size: var(--fs-6);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .card-content .btn-link ion-icon {
+    color: var(--orange-soda);
+    font-size: 1.6rem;
+  }
+  
+  /* PORTFOLIO */
+  .portfolio-list li:nth-child(even) .card-content {
+    margin-inline-start: 50%;
+  }
+  
+  @media (min-width: 768px) {
+    /* PORTFOLIO */
+    .portfolio-card {
+      background-size: 115%;
+      padding-inline: 80px;
+    }
+  
+    .portfolio-card:is(:hover, :focus) {
+      background-size: 130%;
+    }
+  }
+  
+  /* PORTFOLIO */
+  .portfolio-card .card-subtitle {
+    font-size: var(--fs-5);
+  }
+  
+  .portfolio-card .btn-link {
+    --fs-6: 1.6rem;
+  }
+  
