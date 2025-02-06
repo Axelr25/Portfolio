@@ -196,8 +196,7 @@ const App = () => {
             </div>
             <div>
               <h3 className="contact-item-title">Address</h3>
-              <address className="contact-item-link">
-                One Apple Park Way, Cupertino, CA 95014
+              <address className="contact-item-link">One Apple Park Way, Cupertino, CA 95014
               </address>
             </div>
           </li>
@@ -207,7 +206,7 @@ const App = () => {
             </div>
             <div>
               <h3 className="contact-item-title">Email</h3>
-              <a href="mailto:hello@axel.com" className="contact-item-link">hello@axel.com</a>
+              <a href="mailto:hello@axel.com" className="contact-item-link">axelramos15@yahoo.com</a>
             </div>
           </li>
           <li className="contact-item">
@@ -216,7 +215,7 @@ const App = () => {
             </div>
             <div>
               <h3 className="contact-item-title">Phone</h3>
-              <a href="tel:+1234567890" className="contact-item-link">+123 456 7890</a>
+              <a href="tel:+1234567890" className="contact-item-link">+714-499-6671</a>
             </div>
           </li>
         </ul>
